@@ -2,27 +2,25 @@ CONTAINER_NAME="jupyterbook-template"
 # IMAGE_NAME (prérequis: docker build -t jupyterbook-templates:1.0.0 .)
 IMAGE_NAME="jupyterbook-templates:1.0.0"
 # NETWORK_NAME (prérequis: docker network create network-name)
-NETWORK_NAME="jupyterbook-template-network"
+# NETWORK_NAME="jupyterbook-template-network"
 
 # set -a
 # [ -f .env.secrets ] && source .env.secrets
 # set +a
 
-# docker run --rm \
-#   --name "$CONTAINER_NAME" \
-#   --volume "$(pwd):/app" \
-#   --workdir /app \
-#   --network "$NETWORK_NAME"\
-#   "$IMAGE_NAME" \
-#   jupyter-book build website/
-
-docker run --rm -it \
+docker run --rm \
   --name "$CONTAINER_NAME" \
   --volume "$(pwd):/app" \
   --workdir /app \
-  --network "$NETWORK_NAME"\
   "$IMAGE_NAME" \
-  bash
+  jupyter-book build website/
+
+# docker run --rm -it \
+#   --name "$CONTAINER_NAME" \
+#   --volume "$(pwd):/app" \
+#   --workdir /app \
+#   "$IMAGE_NAME" \
+#   bash
 
 # ======================================================
 # DOCKER_CMD checklist
@@ -78,6 +76,7 @@ docker run --rm -it \
 
 # Network: (prérequis: docker network create network-name)
 # --network network-name \
+#   --network "$NETWORK_NAME" \
 
 # Ports exposés sur l'hôte:
 # -p 80:80 \
