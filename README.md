@@ -1,6 +1,8 @@
 # Jupyter Book with numbered equations
 
-How to handle equation numbering in a Jupyter Book for a static website.
+How to handle equation numbering for a static website built with jupyter-book.
+
+The result is [here](https://benjamingosselincliche.github.io/jupyterbook-with-numbered-equations).
 
 ## Build
 
