@@ -1,0 +1,24 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: chapters/root-presentation
+defaults:
+  titlesonly: True
+
+parts:
+- caption: Part A
+  numbered: 2
+  chapters:
+  - file: chapters/a-chapter
+  - file: chapters/an-other-chapter
+
+- caption: Part B
+  numbered: 2
+  chapters:
+  - file: chapters/the-best-chapter
+
+- caption: Appendix
+  numbered: 2 
+  chapters:
+  - file: chapters/references
