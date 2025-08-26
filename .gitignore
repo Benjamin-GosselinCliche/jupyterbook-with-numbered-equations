@@ -22,10 +22,10 @@
 *.secrets
 
 # Clés privées / certificats
-*.pem
-*.key
-*.crt
-*.cert
+# *.pem
+# *.key
+# *.crt
+# *.cert
 
 # ======================================================
 # BACKEND PYTHON
@@ -43,3 +43,4 @@
 # BIG DATA
 # ======================================================
 
+website/_build
