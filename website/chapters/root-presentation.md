@@ -11,7 +11,7 @@ kernelspec:
 
 # Presentation
 
-This static website demonstrates how to handle equation numbering in a Jupyter Book for a static website.
+This static website demonstrates how to handle equation numbering for a static website built with jupyter-book.
 
 This is the table of contents with the examples:
 
