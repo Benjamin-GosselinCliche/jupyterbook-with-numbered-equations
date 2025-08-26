@@ -30,24 +30,24 @@ latex:
 bibtex_bibfiles:
   - ./references.bib
 
-# Launch buttons (e.g., Binder, Colab)
-launch_buttons:
-  binderhub_url: ""  # URL for BinderHub
-#  notebook_interface: example.example.fr"  # Optional notebook interface
-#  binderhub_url: "https://github.com/..."  # Example Binder URL
+# # Launch buttons (e.g., Binder, Colab)
+# launch_buttons:
+#   binderhub_url: ""  # URL for BinderHub
+# #  notebook_interface: example.example.fr"  # Optional notebook interface
+# #  binderhub_url: "https://github.com/..."  # Example Binder URL
 
-# Repository / web information (optional)
-# repository:
-#   url: https://github.com/...  # URL of the online repository
-#   path_to_book: ""  # Optional path to book relative to repository root
-#   branch: main  # Branch to use for links
+# # Repository / web information (optional)
+repository:
+  url: https://github.com/benjamingosselincliche/jupyterbook-with-numbered-equations # URL of the online repository
+  path_to_book: ""  # Optional path to book relative to repository root
+  branch: main  # Branch to use for links
 
 # GitHub / HTML settings
 html:
   footer: false  # Disable default footer
   # custom_footer: "<p>Text</p>"  # Uncomment to add custom HTML footer
   # use_issues_button: true  # Uncomment to add GitHub issues button
-  # use_repository_button: true  # Uncomment to add repository button
+  use_repository_button: true  # Uncomment to add repository button
   # home_page_in_navbar  : true  # Include home page link in navbar
   # baseurl : https://example.com  # Base URL for your site
   # extra_navbar: Created with <a href="https://jupyterbook.org">Jupyter Book</a>
